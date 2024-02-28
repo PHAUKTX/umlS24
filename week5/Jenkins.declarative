@@ -42,3 +42,10 @@ pipeline {
     }
   }
 }
+publishHTML (
+          target: [
+            reportDir: 'Chapter08/sample1/build/reports/checkstyle',
+            reportFiles: 'main.html',
+            reportName: "jacoco checkstyle"
+          ]
+
